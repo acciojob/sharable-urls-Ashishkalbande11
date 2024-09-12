@@ -8,10 +8,10 @@ function updateURL() {
 
     // Add query parameters if they exist
     if (name) {
-        url += `?name=${encodeURIComponent(name)}`;
+        url += `?name=${(name)}`;
     }
     if (year) {
-        url += (name ? "&" : "?") + `year=${encodeURIComponent(year)}`;
+        url += (name ? "&" : "?") + `year=${(year)}`;
     }
 
     // Update the h3 element with the new URL
